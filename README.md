@@ -24,6 +24,3 @@ Solution will execute couple of tests:
 ## Troubleshooting
 * run `node -v` and make sure your node version is 8.x.x or greater
 * `webdriver-manager` _should_ have updated on install, but if not, run `npm run update` to be sure
-# slotGame
-# slotGame
-# slotGame
