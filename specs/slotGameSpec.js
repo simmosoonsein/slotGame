@@ -16,9 +16,9 @@ describe('Testing slot game', () => {
     });
 
     it('Check that current balance is recalculated', async () => {
-        var initialBalance = await slotPage.getPlayerBalance();
+        const initialBalance = await slotPage.getPlayerBalance();
         slotPage.clickSpinButton();
-        var newBalance = await slotPage.getPlayerBalance();
+        const newBalance = await slotPage.getPlayerBalance();
         if (await slotPage.spinResultedWin()) {
             expect(initialBalance).toBeLessThan(newBalance)
         } else {
