@@ -9,6 +9,7 @@ Solution will execute couple of tests:
 5. Checks that player will get random win
 6. Check that in case of no win message is not shown
 7. Check that in case of no balance reels won't spin
+8. Check that correct amount is paid after win
 
 ## Setup:
 * Install [Node](http://nodejs.org)

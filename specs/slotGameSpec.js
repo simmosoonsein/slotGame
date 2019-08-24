@@ -61,5 +61,14 @@ describe('Testing slot game', () => {
             slotPage.clickSpinButton();
             expect(await slotPage.getWinMessage()).toEqual("Win " + data.message + " coins");
         });
+
+        it('Check different win combinations pay correct amount', async () => {
+            await slotPage.setTestData(data.combination);
+            const initialBalance = await slotPage.getPlayerBalance();
+            slotPage.clickSpinButton();
+            const newBalance = await slotPage.getPlayerBalance();
+            expect(newBalance - initialBalance + 1).toEqual(parseInt(data.message));
+        });
+
     })
 });
