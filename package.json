@@ -286,7 +286,7 @@
     "jasmine-spec-reporter": "^4.2.1",
     "locate-path": "^3.0.0",
     "limit-it": "^3.2.9",
-    "kind-of": "^3.2.2",
+    "kind-of": "^6.0.3",
     "lowercase-keys": "^1.0.1",
     "make-dir": "^2.1.0",
     "map-cache": "^0.2.2",
